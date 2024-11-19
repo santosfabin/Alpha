@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	background: url("./src/images/wallpaper.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	border-bottom: 2px solid #333;
+	padding: 20px;
+	background: #fff;
+}
+header a,
+header li {
+	font-weight: 600;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+main {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	gap: 10px;
+	border-radius: 10px;
+	border: 10px solid #8a89c7;
+	outline: 3px solid #253534;
+}
+
+img {
+	width: 400px;
+}
+
+audio {
+	width: 500px;
+	border-radius: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: #dcdedf;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+	color: #555;
+}
+
+p {
+	text-align: center;
+
+	border: 5px solid lightblue;
+	border-radius: 10px;
+	padding: 30px;
+
+	background: #fefefe;
+}
+
+#lista-pokemon {
+	width: 60%;
+	border-radius: 10px;
+	border: 10px solid #8a89c7;
+	outline: 3px solid #253534;
+}
+
+#secound-lista-pokemon {
+	width: 100%;
+	border: 16px solid #716a88;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background: #fefefe;
+}
+
+#secound-lista-pokemon a {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid transparent;
+}
+
+#secound-lista-pokemon a:hover {
+	border-bottom: 1px solid #333;
+	text-decoration: none;
+}
+#secound-lista-pokemon a * {
+	font-size: 20px;
+}
+
+.pokemon {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	max-width: 500px;
+}
+
+.center {
+	align-items: center;
+}
