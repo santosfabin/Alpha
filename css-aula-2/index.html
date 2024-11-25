@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PokéExplore</title>
+		<link rel="icon" href="./src/favicon.ico" type="image/x-icon" sizes="any" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<img
+				loading="lazy"
+				draggable="false"
+				width="300"
+				src="/src/pokedexplore.svg"
+				alt="PokédExplore"
+			/>
+		</header>
+		<main>
+			<section>
+				<div>
+					<h1>Ivysaur</h1>
+
+					<nav>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="40"
+							src="/src/grass.svg"
+							alt="Grass"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="40"
+							src="/src/poison.svg"
+							alt="Grass"
+						/>
+					</nav>
+					<p>
+						Ivysaur é a evolução do Bulbasaur, um Pokémon do tipo Grama/Veneno.
+						Com sua semente em constante crescimento nas costas, ele utiliza
+						habilidades como Vine Whip para atacar. Ivysaur é conhecido por sua
+						lealdade, determinação e temperamento equilibrado. Sua evolução para
+						Venusaur é aguardada por treinadores, pois se torna ainda mais
+						poderoso. Um parceiro confiável, ideal para aqueles que buscam um
+						Pokémon versátil e capaz de enfrentar diversos desafios com suas
+						habilidades de planta e veneno.
+					</p>
+					<a href="#" id="mais">Mais detalhes</a>
+				</div>
+
+				<img
+					id="img-pokemon"
+					src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+					alt="Ivysaur"
+				/>
+			</section>
+
+			<section id="search">
+				<nav id="category">
+					<h3>Busque por tipo:</h3>
+					<div>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/bug.svg"
+							alt="bug"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/dark.svg"
+							alt="dark"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/dragon.svg"
+							alt="dragon"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/electric.svg"
+							alt="electric"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/fairy.svg"
+							alt="fairy"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/fighting.svg"
+							alt="fighting"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/fire.svg"
+							alt="fire"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/flying.svg"
+							alt="flying"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/ghost.svg"
+							alt="ghost"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/grass.svg"
+							alt="grass"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/ground.svg"
+							alt="ground"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/ice.svg"
+							alt="ice"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/normal.svg"
+							alt="normal"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/poison.svg"
+							alt="poison"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/psychic.svg"
+							alt="psychic"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/rock.svg"
+							alt="rock"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/steel.svg"
+							alt="steel"
+						/>
+						<img
+							loading="lazy"
+							draggable="false"
+							width="35"
+							src="https://pokedexplore.vercel.app/types/water.svg"
+							alt="water"
+						/>
+					</div>
+				</nav>
+
+				<section id="pokemons">
+					<div>
+						<div class="grass">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+								alt="Bulbasaur"
+							/>
+							<div>
+								<h2>Bulbasaur</h2>
+								<div class="type grass-poison">
+									<p>Grass</p>
+									<p>Poison</p>
+								</div>
+								<div>
+									<p>Altura: 0.7 M</p>
+									<p>Peso: 6.9 KG</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="grass">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+								alt="Ivysaur"
+							/>
+							<div>
+								<h2>Ivysaur</h2>
+								<div class="type grass-poison">
+									<p>Grass</p>
+									<p>Poison</p>
+								</div>
+								<div>
+									<p>Altura: 1 M</p>
+									<p>Peso: 13 KG</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="grass">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+								alt="Venusaur"
+							/>
+							<div>
+								<h2>Venusaur</h2>
+								<div class="type grass-poison">
+									<p>Grass</p>
+									<p>Poison</p>
+								</div>
+								<div>
+									<p>Altura: 2 M</p>
+									<p>Peso: 100 KG</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="fire">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+								alt="Charmander"
+							/>
+							<div>
+								<h2>Charmander</h2>
+								<div class="type fire">
+									<p>Fire</p>
+								</div>
+								<div>
+									<p>Altura: 0.6 M</p>
+									<p>Peso: 8.5 KG</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="fire">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+								alt="Charmeleon"
+							/>
+							<div>
+								<h2>Charmeleon</h2>
+								<div class="type fire">
+									<p>Fire</p>
+								</div>
+								<div>
+									<p>Altura: 1.1 M</p>
+									<p>Peso: 19 KG</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="fire">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+								alt="Charizard"
+							/>
+							<div>
+								<h2>Charizard</h2>
+								<div class="type fire-flying">
+									<p>Fire</p>
+									<p>flying</p>
+								</div>
+								<div>
+									<p>Altura: 1.7 M</p>
+									<p>Peso: 90.5 KG</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="water">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+								alt="Squirtle"
+							/>
+							<div>
+								<h2>Squirtle</h2>
+								<div class="type water">
+									<p>Water</p>
+								</div>
+								<div>
+									<p>Altura: 0.5 M</p>
+									<p>Peso: 9 KG</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="water">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+								alt="Wartortle"
+							/>
+							<div>
+								<h2>Wartortle</h2>
+								<div class="type water">
+									<p>Water</p>
+								</div>
+								<div>
+									<p>Altura: 1 M</p>
+									<p>Peso: 22.5 KG</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="water">
+							<img
+								src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+								alt="Blastoise"
+							/>
+							<div>
+								<h2>Blastoise</h2>
+								<div class="type water">
+									<p>Water</p>
+								</div>
+								<div>
+									<p>Altura: 1.6 M</p>
+									<p>Peso: 85.5 KG</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<footer>
+					<a href="https://pokedexplore.vercel.app/" target="_blank">
+						Inspiração
+					</a>
+          <a href="https://github.com/renatogsantos/pokedexplore" target="_blank">
+            Todos os direitos para Renato G Santos  
+          </a>
+				</footer>
+			</section>
+		</main>
+	</body>
+</html>
