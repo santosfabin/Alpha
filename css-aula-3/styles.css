@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: white;
+}
+
+header {
+	padding-top: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+header img {
+	height: 108px;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+nav > img {
+	height: 40px;
+}
+
+section:first-child {
+	padding-top: 150px;
+	width: 100%;
+	background: linear-gradient(180deg, #ff8a00, #ff3600);
+	display: flex;
+	justify-content: center;
+}
+
+section:first-child > div {
+	max-width: 1320px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap-reverse;
+	padding: 100px 0;
+
+}
+
+section:first-child > div > div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.percent-50 {
+	width: 48%;
+	flex: 0 0 auto;
+}
+
+.percent-100 {
+	max-width: 100%;
+}
+
+section:first-child > div > div:first-child {
+	display: flex;
+	justify-content: center;
+}
+
+#detalhes {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: rgba(6, 11, 20, 0.8);
+	border-radius: 12px;
+	padding: 12px 32px;
+	transition: transform 0.2s;
+}
+
+#detalhes:hover {
+	transform: scale(0.9);
+}
+
+#cartoes {
+	width: 100%;
+	background: #212529;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 200px;
+}
+
+#cartoes > div {
+	max-width: 1320px;
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	width: 350px;
+	height: 350px;
+	background-image: radial-gradient(
+		80% 80% at 50% bottom,
+		rgb(102, 204, 51),
+		rgba(6, 14, 32, 0.8)
+	);
+	display: flex;
+	flex-direction: column;
+	border: 1px solid hsla(0, 0%, 100%, 0.2);
+	border-radius: 42px;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+	padding: 30px;
+}
+
+.name {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.card > img {
+	position: absolute;
+	top: -100px;
+}
+
+.type {
+	display: flex;
+	gap: 10px;
+}
+
+.type div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	width: 120px;
+	height: 35px;
+	border-radius: 10px;
+}
+
+.type .grass {
+	background: #6c3;
+}
+
+.type .poison {
+	background: #a6c;
+}
+
+.desc {
+	display: flex;
+	gap: 50px;
+}
+
+.desc div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.desc p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
