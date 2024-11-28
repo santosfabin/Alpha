@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", serif;
+	text-decoration: none;
+	list-style: none;
+	border: 0;
+	background: none;
+	outline: none;
+}
+
+header {
+	& li {
+		color: white;
+		font-weight: 500;
+		font-size: 1.1rem;
+		cursor: pointer;
+	}
+
+	& li::after {
+		display: block;
+		content: "";
+		width: 0;
+		height: 2px;
+		background: #c613d1;
+		transition: width 0.3s ease-in-out;
+	}
+
+	& li:hover::after {
+		width: 100%;
+	}
+
+	span {
+		font-weight: 800;
+	}
+
+	background: linear-gradient(
+		147deg,
+		rgba(247, 247, 247, 1) 21%,
+		rgba(255, 42, 189, 1) 54%,
+		rgba(228, 20, 241, 1) 78%,
+		rgba(198, 19, 209, 1) 100%
+	);
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		padding: 1rem;
+		align-items: center;
+	}
+
+	ul {
+		display: flex;
+		gap: 40px;
+	}
+
+	button {
+		background: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-weight: 600;
+	}
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	& > span {
+		font-size: 30px;
+	}
+
+	& > img {
+		height: 30px;
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-top: 3rem;
+
+	& > section:first-child {
+		width: 100%;
+		max-width: 1350px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 1rem;
+
+	border: 1px solid #dbdbdb;
+	border-radius: 1rem;
+
+	max-width: 240px;
+
+	padding: 1.5rem;
+
+	text-align: center;
+	transition: box-shadow 0.1s;
+
+	&:hover {
+		box-shadow: 0 0 0.5rem 0.3rem #91919122;
+	}
+
+	& > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	img {
+		height: 40px;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+		color: #363636;
+	}
+
+	p {
+		color: #919191;
+		height: 140px;
+	}
+
+	button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		color: #9747ff;
+		height: 2.3rem;
+		width: 7rem;
+		cursor: pointer;
+	}
+
+	button:hover {
+		border: 1px solid #9747ff;
+		border-radius: 0.5rem;
+	}
+
+	button > img {
+		height: 25px;
+	}
+}
+#cards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex: 0;
+	flex-wrap: wrap;
+}
