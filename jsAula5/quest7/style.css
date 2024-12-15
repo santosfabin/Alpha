@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+.absotule {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	background: #ffc9c9;
+}
+
+#divPai {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	position: relative;
+}
+.ativado {
+  background: #e03131 !important;
+}
+
+#divFilho {
+  top: 0px;
+  left: 0px;
+}
+#divFilho2 {
+  top: 20px;
+  left: 20px;
+}
+#divFilho3 {
+  top: 30px;
+  left: 30px;
+}
+#divFilho4 {
+  top: 40px;
+  left: 40px;
+}

@@ -1,0 +1,14 @@
+* {
+  outline: none;
+}
+.errado {
+  color: red;
+}
+
+.borda {
+  border: 1px solid red;
+}
+
+input {
+  border: 1px solid black;
+}

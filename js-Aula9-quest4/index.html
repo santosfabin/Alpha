@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lista de produtos</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section id="cadastro">
+			<div>
+				Nome do Produto:
+				<input id="nomeProdutoInput" type="text" />
+			</div>
+			<div>
+				Descrição:
+				<input id="descricaoProdutoInput" type="text" />
+			</div>
+			<div>
+				Valor:
+				<input id="valorProdutoInput" type="number" />
+			</div>
+			<button id="incluirProdutoButton">Incluir produto</button>
+		</section>
+		<p id="mensagem"></p>
+		<table>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Valor</th>
+					<th>Editar</th>
+					<th>Apagar</th>
+				</tr>
+			</thead>
+			<tbody id="listaDaTabela"></tbody>
+		</table>
+		<section id="modal">
+			<div id="modalConteudo">
+				<div>
+					<p>Id</p>
+					<div id="idProdutoConteudo"></div>
+				</div>
+				<div>
+					<p>Nome</p>
+					<div id="nomeProdutoConteudo"></div>
+				</div>
+				<div>
+					<p>Valor</p>
+					<div id="valorProdutoConteudo"></div>
+				</div>
+				<div>
+					<p>Descrição</p>
+					<div id="descricaoProdutoConteudo"></div>
+				</div>
+			</div>
+			<div id="modalEdicao">
+				<div>
+					<p>Id</p>
+					<div id="idProdutoedicao"></div>
+				</div>
+				<div>
+					<p>Nome</p>
+					<input id="nomeProdutoedicao" />
+				</div>
+				<div>
+					<p>Valor</p>
+					<input id="valorProdutoedicao" type="number"/>
+				</div>
+				<div>
+					<p>Descrição</p>
+					<textarea id="descricaoProdutoedicao"></textarea>
+				</div>
+				<button id="salvarProdutoEdicao">Salvar alterações</button>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>

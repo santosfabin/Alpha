@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+textarea {
+	resize: none;
+	width: 50%;
+	height: 100vh;
+  padding: 3rem;
+}
+
+div {
+	width: 50%;
+	height: 100vh;
+  padding: 3rem;
+}

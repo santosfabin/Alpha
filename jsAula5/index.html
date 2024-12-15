@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest 9</title>
+</head>
+<body>
+  
+  <input id="min" type="text">
+  <input id="max" type="text">
+  <div id="log"></div>
+  <button id="sortear">Sortear</button>
+
+  <script>
+    const resulMin = document.getElementById("min")
+    const resulMax = document.getElementById("max")
+    const sortear = document.getElementById("sortear")
+    const log = document.getElementById("log")
+
+    sortear.addEventListener("click", () => {
+      let min = Number(resulMin.value)
+      let max = Number(resulMax.value)
+      
+      if (isNaN(min) || isNaN(max)) {
+        log.innerText = "Por favor, insira valores numéricos válidos.";
+        return;
+      }
+
+      if(min != min.toFixed(0)) {
+        log.innerText = "Número não inteiro"
+        return;
+      }
+      if(max != max.toFixed(0)) {
+        log.innerText = "Número não inteiro"
+        return;
+      }
+      if (min < 0 || max < 0) {
+        log.innerText = "Os valores devem ser maiores ou iguais a zero.";
+        return;
+      }
+
+      if (min >= max) {
+        log.innerText = "O valor mínimo deve ser menor que o valor máximo.";
+        return;
+      }
+      
+      const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      log.innerText = `Número sorteado: ${randomNumber}`;
+    })
+  </script>
+</body>
+</html>

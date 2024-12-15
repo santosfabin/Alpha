@@ -1,0 +1,29 @@
+<html>
+	<head></head>
+	<body>
+		<form id="form">
+			Tarefa:
+			<input id="input-task" />
+			<br />
+			<button id="add-button">Adicionar</button>
+		</form>
+		<ul id="task-list"></ul>
+
+		<script>
+			const taskListUl = document.getElementById("task-list");
+			const inputTask = document.getElementById("input-task");
+
+			document
+			  .getElementById("form")
+			  .addEventListener("submit", function (e) {
+          e.preventDefault()
+          if(inputTask.value != "") {
+            const task = inputTask.value;
+            inputTask.value = "";
+
+            taskListUl.innerHTML += `<li>${task}</li>`;
+          }
+			  });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<style>
+      li {
+			  padding: 5px 0;
+			}
+			/*
+			Classe utilitária: faz o texto ficar com uma linha tracejada por cima.
+			Deve ser adicionada a um <li> quando clicado
+			*/
+			.done {
+			text-decoration: line-through;
+			}
+		</style>
+	</head>
+	<body>
+		Nova tarefa:
+		<input id="task-input" />
+		<button id="add-button">Adicionar</button>
+		<ul id="tasklist"></ul>
+		<script>
+			function addTask() {
+			  const taskText = taskInput.value;
+			  const newLi = document.createElement("li");
+			  newLi.innerText = taskText;
+			  tasklist.appendChild(newLi);
+			  newLi.addEventListener("click", function () {
+			    this.classList.add("done");
+			  });
+			}
+			const taskInput = document.getElementById("task-input");
+			const addButton = document.getElementById("add-button");
+			const tasklist = document.getElementById("tasklist");
+			addButton.addEventListener("click", addTask);
+		</script>
+	</body>
+</html>
