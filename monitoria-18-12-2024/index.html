@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter with Categories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search for a product...">
+      <select id="category">
+        <option value="">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Peripherals">Peripherals</option>
+      </select>
+      <button id="reset">Reset Filters</button>
+    </div>
+    <ul class="product-list" id="product-list">
+      <!-- Products will be displayed here -->
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

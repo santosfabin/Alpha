@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .controls input, .controls select, .controls button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .product-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .product-list li:hover {
+    background-color: #f9f9f9;
+  }
