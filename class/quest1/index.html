@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#configuracoes{
+			  display: flex;
+			  gap: 1rem;
+        flex-wrap: wrap;
+			}
+			.cartelaImpressa {
+			  display: flex;
+			  gap: 1rem;
+			}
+			.numeroBola{
+			  width: 2rem;
+			  height: 2rem;
+			  border: 1px solid black;
+			  border-radius: 50%;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+        cursor: pointer;
+			}
+      .marcado{
+        background: green;
+      }
+		</style>
+	</head>
+	<body>
+		<main>
+			<section id="configuracoes">
+				<button id="cartela">Criar Cartela</button>
+				<button id="sorteio">Iniciar sorteio</button>
+			</section>
+			<section id="cartelas"></section>
+		</main>
+
+		<script src="index.js"></script>
+	</body>
+</html>
