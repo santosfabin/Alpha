@@ -1,0 +1,4 @@
+192.168.1.100 [25/Jan/2024:10:15:32 +0300] "GET /products/electronics HTTP/1.1" 200 1458 "Mozilla/5.0" 0.234s
+10.0.0.45 [25/Jan/2024:10:15:40 +0300] "POST /api/users HTTP/1.1" 201 532 "Python-Requests/2.28.1" 0.891s
+172.16.0.89 [25/Jan/2024:10:15:45 +0300] "GET /images/banner.jpg HTTP/1.1" 304 0 "Chrome/120.0.0.0" 0.045s
+192.168.1.105 [25/Jan/2024:10:15:50 +0300] "DELETE /api/cart/15 HTTP/1.1" 204 0 "PostmanRuntime/7.32.3" 0.123s
