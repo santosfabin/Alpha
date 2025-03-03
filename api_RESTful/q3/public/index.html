@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Store</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Optional, for styling -->
+	</head>
+	<body>
+		<h1>Produtos</h1>
+		<section>
+			<h2>Lista de produto</h2>
+			<div id="products-list"></div>
+		</section>
+		<form id="make-product">
+			<h2>Adicionar produto</h2>
+			<div>
+				<label>
+					<span>Nome do produto:</span>
+					<input type="text" id="name-product" />
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Valor do produto:</span>
+					<input type="text" id="value-product" />
+				</label>
+			</div>
+			<button>Criar Produto</button>
+		</form>
+
+		<form id="update-form">
+			<h2>Atualizar produto</h2>
+			<div>
+				<label>
+					<span>Id do produto:</span>
+					<input type="text" id="id-put" />
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Nome do produto:</span>
+					<input type="text" id="name-put" />
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Valor do produto:</span>
+					<input type="text" id="value-put" />
+				</label>
+			</div>
+			<button>Atualizar</button>
+		</form>
+
+		<form id="delete-product">
+			<h2>Apagar produto</h2>
+			<label>
+				<span>Id do produto:</span>
+				<input type="text" id="id-delete" />
+			</label>
+			<button>Apagar</button>
+		</form>
+
+		<h1>Gestão de Pedidos</h1>
+
+		<!-- Listagem de pedidos -->
+		<section>
+			<h2>Lista de Pedidos</h2>
+			<ul id="orders-list">
+				<!-- A lista de pedidos será inserida aqui -->
+			</ul>
+		</section>
+
+		<!-- Criar novo pedido -->
+		<section>
+			<h2>Criar Pedido</h2>
+			<form id="make-order">
+				<label for="order-items">
+					Itens do Pedido (id-quantidade, separados por vírgula):
+				</label>
+				<input
+					type="text"
+					id="order-items"
+					placeholder="Ex: 1-2,3-1"
+					required
+				/>
+				<button type="submit">Criar Pedido</button>
+			</form>
+		</section>
+
+		<!-- Atualizar Pedido -->
+		<section>
+			<h2>Atualizar Pedido</h2>
+			<form id="update-order">
+				<div>
+					<label for="id-update-order">
+						<span>ID do Pedido:</span>
+						<input type="number" id="id-update-order" required />
+					</label>
+				</div>
+
+				<div>
+					<label for="update-items">
+						<span>Itens do Pedido (id-quantidade, separados por vírgula):</span>
+						<input
+							type="text"
+							id="update-items"
+							placeholder="Ex: 1-2,3-1"
+							required
+						/>
+					</label>
+				</div>
+
+				<button type="submit">Atualizar Pedido</button>
+			</form>
+		</section>
+
+		<!-- Deletar pedido -->
+		<section>
+			<h2>Deletar Pedido</h2>
+			<form id="delete-order">
+				<label for="id-delete-order">ID do Pedido para Deletar:</label>
+				<input type="number" id="id-delete-order" required />
+				<button type="submit">Deletar Pedido</button>
+			</form>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
