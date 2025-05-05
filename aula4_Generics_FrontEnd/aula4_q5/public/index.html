@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Galeria de Cachorros</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<label>
+			<span>Quantidade de cachorros</span>
+			<input
+				type="number"
+				name="qtdDogs"
+				id="qtdDogs"
+				min="1"
+				max="100"
+				value="1"
+			/>
+		</label>
+		<button id="btnBuscar">Buscar</button>
+		<button id="btnLimpar">Limpar</button>
+
+		<div id="galeria">
+			<div id="galeriaDogs"></div>
+
+			<div id="paginacao">
+				<button id="voltar">Voltar</button>
+				<div id="paginaAtual"></div>
+				<button id="proximo">Próximo</button>
+			</div>
+		</div>
+
+		<div id="dogModal" class="modal">
+			<div class="modal-content">
+				<span class="close-button" id="closeModal">&times;</span>
+				<img id="modalImage" />
+				<div id="modalInfo"></div>
+			</div>
+		</div>
+
+		<div id="notification" class="notification">
+			<p id="notification-message"></p>
+		</div>
+
+		<script type="module" src="index.js"></script>
+	</body>
+</html>

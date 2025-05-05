@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cadastro de Usuário</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Cadastro de Usuário</h1>
+			<form id="signupForm">
+				<div class="input-container">
+					<label for="name">Nome:</label>
+					<input type="text" id="name" name="name" />
+				</div>
+
+				<div class="input-container">
+					<label for="email">E-mail:</label>
+					<input type="text" id="email" name="email" />
+				</div>
+
+				<div class="input-container">
+					<label for="password">Senha:</label>
+					<input type="password" id="password" name="password" />
+				</div>
+
+				<button type="submit">Cadastrar</button>
+			</form>
+		</div>
+
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Cadastro realizado com sucesso!</h2>
+			</div>
+		</div>
+
+		<div id="bottom-modal" class="hidden">
+			<p id="bottom-modal-text"></p>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>

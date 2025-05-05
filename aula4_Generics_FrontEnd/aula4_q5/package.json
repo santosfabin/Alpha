@@ -1,0 +1,17 @@
+{
+	"name": "notas",
+	"version": "1.0.0",
+	"description": "",
+	"license": "ISC",
+	"author": "",
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm install && tsc",
+		"start": "tsc && node dist/index.js",
+		"dev": "tsc --watch"
+	},
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
+}
